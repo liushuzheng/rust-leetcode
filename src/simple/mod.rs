@@ -5,3 +5,4 @@ mod find_median_sorted_arrays;
 mod max_area;
 mod _match;
 mod climb_stairs;
+mod longest_common_prefix;
