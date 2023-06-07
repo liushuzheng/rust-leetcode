@@ -27,15 +27,19 @@ pub fn mid(nums1: Vec<i32>, nums2: Vec<i32>, mid: usize, m1: usize) -> (i32, i32
             if let Some(v) = nums1.get(in1) {
                 min = *v;
                 in1 += 1;
+            } else {
+                in2 += 1;
             }
         } else {
             if let Some(v) = nums2.get(in2) {
                 min = *v;
                 in2 += 1;
+            }else {
+                in1 +=1;
             }
         }
 
-        print!("in1 {} in2 {} mid {}  ", in1, in2, mid);
+        // print!("in1 {} in2 {} mid {}  ", in1, in2, mid);
     }
     if mid != m1 {
         return (min, min);
