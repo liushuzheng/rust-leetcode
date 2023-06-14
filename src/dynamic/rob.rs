@@ -23,5 +23,5 @@ pub fn rob(nums: Vec<i32>) -> i32 {
 }
 
 fn test_func(){
-  let v = Vec![2,7,9,3,1];
+  let v = vec![2,7,9,3,1];
 }

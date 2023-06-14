@@ -27,5 +27,4 @@ fn test_fn() {
     let endWord = "cog".to_string();
     let wordList = vec!["hot".to_string(), "dot".to_string(), "dog".to_string(), "lot".to_string(), "log".to_string(), "cog".to_string()];
     let v = find_ladders(beginWord, endWord, wordList);
-    vec1
 }
