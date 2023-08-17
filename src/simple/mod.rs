@@ -9,3 +9,4 @@ mod longest_common_prefix;
 mod average_value;
 mod unequal_triplets;
 mod number_of_cuts;
+mod reverse_string;
