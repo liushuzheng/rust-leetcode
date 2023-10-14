@@ -10,5 +10,6 @@ mod average_value;
 mod unequal_triplets;
 mod number_of_cuts;
 mod reverse_string;
-
 mod find_the_array_conc_val;
+
+mod single_number;
