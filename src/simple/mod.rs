@@ -13,3 +13,5 @@ mod reverse_string;
 mod find_the_array_conc_val;
 
 mod single_number;
+
+mod count_points;

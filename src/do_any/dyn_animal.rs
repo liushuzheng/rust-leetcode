@@ -48,6 +48,7 @@ fn ha(){
 
     // println!("{}, {}, and {}", r1, r2, r3);
     println!("{}",  r3);
+    let a = "afb";
 
 
 }
