@@ -15,3 +15,7 @@ mod find_the_array_conc_val;
 mod single_number;
 
 mod count_points;
+
+mod delete_duplicates;
+
+mod maximum_number_of_string_pairs;
