@@ -11,3 +11,5 @@ mod pond_sizes;
 mod maximum_even_split;
 
 mod my_pow;
+
+mod minimum_removal;
