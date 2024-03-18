@@ -13,3 +13,7 @@ mod maximum_even_split;
 mod my_pow;
 
 mod minimum_removal;
+
+mod divisibility_array;
+
+mod max_array_value;

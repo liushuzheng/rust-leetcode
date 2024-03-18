@@ -19,3 +19,9 @@ mod count_points;
 mod delete_duplicates;
 
 mod maximum_number_of_string_pairs;
+
+mod sum_indices_with_k_set_bits;
+
+mod range_sum_bst;
+
+mod maximum_odd_binary_number;
