@@ -17,3 +17,5 @@ mod minimum_removal;
 mod divisibility_array;
 
 mod max_array_value;
+
+mod frequency_tracker;

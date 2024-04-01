@@ -25,3 +25,7 @@ mod sum_indices_with_k_set_bits;
 mod range_sum_bst;
 
 mod maximum_odd_binary_number;
+
+mod num_array;
+
+mod final_string;
