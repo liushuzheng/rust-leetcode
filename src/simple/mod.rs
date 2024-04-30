@@ -29,3 +29,10 @@ mod maximum_odd_binary_number;
 mod num_array;
 
 mod final_string;
+
+mod maximum_count;
+
+mod map_struct;
+mod distance_traveled;
+
+mod number_of_employees_who_met_target;
