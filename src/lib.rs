@@ -8,3 +8,5 @@ mod do_any;
 mod programming;
 
 mod code_2024_05;
+
+mod design_patterns;
