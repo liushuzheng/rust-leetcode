@@ -12,3 +12,5 @@ mod code_2024_05;
 mod code_2024_06;
 
 mod design_patterns;
+
+mod wx_code;
