@@ -7,16 +7,15 @@ use tokio;
 // }
 
 use std::convert::TryInto;
+use std::thread;
+use std::time::Duration;
+use indicatif::ProgressBar;
 
 fn main() {
-    let a: u8 = 10;
-    let b: u16 = 1500;
-
-    let b_: u8 = b.try_into().unwrap();
-
-    if a < b_ {
-        println!("Ten is less than one hundred.");
+    let pb = ProgressBar::new(1024);
+    for _ in 0..1024 {
+        pb.inc(1);
+        thread::sleep(Duration::from_millis(5));
     }
-
-    let s1: Box<str> = "Hello there!".into();
+    pb.finish_with_message("done");
 }
