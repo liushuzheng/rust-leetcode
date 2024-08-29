@@ -17,13 +17,34 @@ fn main() {
     // something([0u8; 0]); // ok
     // something([0u8; 512]); // ok
     // something([0u8; 1024]); // 编译错误，数组长度是1024字节，超过了768字节的参数长度限制
+    let assert = Assert::<true>::new();
+    match assert {
+        Assert::True => {}
+        Assert::False => {}
+        Assert::Conditional => {}
+    }
 }
 
 // ---
 
 pub enum Assert<const CHECK: bool> {
-    //
+
+    True,
+    False,
+    Conditional,
 }
+
+impl<const CHECK: bool> Assert<CHECK> {
+    pub fn new() -> Self {
+        if CHECK {
+            Assert::True
+        } else {
+            Assert::False
+        }
+    }
+}
+
+
 
 pub trait IsTrue {
     //

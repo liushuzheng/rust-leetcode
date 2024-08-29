@@ -4,3 +4,5 @@ mod life;
 
 mod generic;
 mod design;
+
+mod course;
