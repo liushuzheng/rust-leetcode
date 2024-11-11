@@ -1,4 +1,3 @@
-#![feature(duration_constructors)]
 
 mod simple;
 mod difficult;
