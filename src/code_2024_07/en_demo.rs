@@ -15,32 +15,32 @@ pub trait CalTime {
     fn cal(&self) -> SystemTime;
 }
 
-impl CalTime for Time {
-    fn cal(&self) -> SystemTime {
-        let a = match self {
-            Time::A(n) => {
-                let start = SystemTime::now();
-                let duration = Duration::from_days(*n as u64);
-                let time = start.add(duration);
-                time
-            }
-            Time::B => {
-                SystemTime::now()
-            }
-            Time::C(s) => {
-                return *s;
-            }
-        };
-        a
-    }
-}
+// impl CalTime for Time {
+//     fn cal(&self) -> SystemTime {
+//         let a = match self {
+//             Time::A(n) => {
+//                 let start = SystemTime::now();
+//                 let duration = Duration::from_days(*n as u64);
+//                 let time = start.add(duration);
+//                 time
+//             }
+//             Time::B => {
+//                 SystemTime::now()
+//             }
+//             Time::C(s) => {
+//                 return *s;
+//             }
+//         };
+//         a
+//     }
+// }
 
 // #[test]
  fn test_aa() {
     // let a =Time::C( SystemTime::now() +Duration::from_days(32));
     let a = Time::A(12);
-    let time = a.cal();
-    println!("{:?}", time);
+    // let time = a.cal();
+    // println!("{:?}", time);
 }
 
 #[test]
