@@ -21,3 +21,5 @@ mod code_2024_07;
 mod code_2024_09;
 
 mod hello_alg;
+
+mod code_2025;
