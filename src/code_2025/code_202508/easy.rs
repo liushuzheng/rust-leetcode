@@ -15,3 +15,18 @@ pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
     }
     result
 }
+
+pub fn generate2(num_rows: i32) -> Vec<Vec<i32>> {
+    let n = num_rows as usize;
+    let mut c = vec![vec![]; n];
+    for i in 0..n {
+        c[i].resize(i + 1, 1);
+        for j in 1..i {
+            // 左上方的数 + 正上方的数
+            c[i][j] = c[i - 1][j - 1] + c[i - 1][j];
+        }
+    }
+    c
+}
+
+
