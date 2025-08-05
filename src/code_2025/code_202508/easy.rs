@@ -29,4 +29,25 @@ pub fn generate2(num_rows: i32) -> Vec<Vec<i32>> {
     c
 }
 
+pub fn num_of_unplaced_fruits(fruits: Vec<i32>, baskets: Vec<i32>) -> i32 {
+    let mut use_baskets = vec![false; baskets.len()];
+    fruits.iter().for_each(|x| {
+        for (i, v) in baskets.iter().enumerate() {
+            if !use_baskets[i] && *v >= *x {
+                use_baskets[i] = true;
+                break;
+            }
+        }
+    });
+
+    use_baskets.into_iter().filter(|&x| !x).count() as i32
+}
+
+#[test]
+fn test_num_of_unplaced_fruits() {
+    let fruits = vec![4, 2, 5];
+    let baskets = vec![3, 5, 4];
+    assert_eq!(1, num_of_unplaced_fruits(fruits, baskets));
+}
+
 
