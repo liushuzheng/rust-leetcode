@@ -7,8 +7,8 @@ pub fn generate(num_rows: i32) -> Vec<Vec<i32>> {
         for j in 0..=i {
             if j == 0 || j == i {
                 cow.push(1);
-            }else {
-                cow.push( result[i-1][j-1] + result[i-1][j]);
+            } else {
+                cow.push(result[i - 1][j - 1] + result[i - 1][j]);
             }
         }
         result.push(cow);
@@ -50,4 +50,15 @@ fn test_num_of_unplaced_fruits() {
     assert_eq!(1, num_of_unplaced_fruits(fruits, baskets));
 }
 
+pub fn is_power_of_three(n: i32) -> bool {
+    let mut n = n;
+    if n < 1 {
+        return false;
+    }
 
+    while n % 3 == 0 {
+        n /= 3;
+    }
+
+    n == 1
+}
