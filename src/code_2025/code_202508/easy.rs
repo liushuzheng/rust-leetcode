@@ -62,3 +62,19 @@ pub fn is_power_of_three(n: i32) -> bool {
 
     n == 1
 }
+
+pub fn is_power_of_four(n: i32) -> bool {
+    let mut n = n;
+    let three = 0b11;
+    while n & three == 0 && n != 0 {
+        n >>= 2;
+    }
+    n == 1
+}
+
+#[test]
+fn test_four(){
+
+    let four = is_power_of_four(16);
+    assert!(four);
+}
